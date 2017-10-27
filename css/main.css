@@ -1,0 +1,60 @@
+<style>
+head{}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+	font-family: "Times New Roman", Georgia, Serif;
+}
+h1{text-align: center;}
+div{
+	padding:10px;
+	float:left;
+}
+.mycontent{	
+	margin-top: 10px;
+	border: 1px solid black;
+	background-color: #999999;
+	padding:40px 10px 10px 10px;
+	}
+.main{
+	overflow:auto;
+	padding:10px;
+	border: 1px solid black;
+	position:relative;
+	top:10px;
+	right:0px;
+	float:right;
+}
+div:nth-child(2) .main{
+	background-color: #d59898;
+}
+div:nth-child(3) .main{
+	background-color: #c14543;
+	color:white;
+}
+div:nth-child(4) .main{
+	background-color: #e5d198;
+}
+
+@media screen and (min-width: 992px) {
+    div {
+              width: 33%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    div {
+              width: 50%;
+    }
+    div:nth-child(4){
+    	width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    div {
+              width: 100%;
+    }
+  }
+
+</style>
